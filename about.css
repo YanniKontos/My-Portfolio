@@ -4,8 +4,12 @@
     box-sizing: border-box;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",
     Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    background: black;
     color: white;
+}
+
+body {
+    background-color: black;
+
 }
 
 .navbar {
@@ -20,18 +24,6 @@
     font-size: 1.2rem;
 }
 
-/*positions and controlls the structure and layout of the navbar*/
-
-.avatar {
-    vertical-align: middle;
-    margin-right: .8%;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-/*avatar properties*/
-
 .nav-title {
     margin-right: auto;
     background: linear-gradient(5deg, #5c30b3, #c71585);
@@ -40,8 +32,6 @@
     font-size: 2rem;
     cursor: pointer;
 }
-
-/*styling and position of the nav title*/
 
 .nav-items {
     position: relative;
@@ -100,77 +90,14 @@
 	opacity: 0;
 }
 
-
-/*start of the main page content*/
-
-.main-page {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -70%);
-    z-index: -1;
-
-}
-
-.main-page-img {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    background-color: gray;
-    background-size: cover;
-    border-radius: 50%;
-    box-shadow: 0 8px 20px #912F40;
-    transition: box-shadow 0.3s, transform 0.3s;
-    animation: hover 3s infinite;
-    margin-left: 2%;
-}
-
-@keyframes hover {
-    0% {box-shadow: 0 20px 20px #912F40;
-        transform: translateY(0%);}
-    50% {box-shadow: 0 15px 35px #912F40;
-        transform: translateY(-1%);}
-    100% {box-shadow: 0 15px 20px #912F40;
-        transform: translateY(0%);}
-}
-
-.main-page-header {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 2rem;
-    text-shadow: 0rem 0rem 0.7rem #BFC0C0;
-}
-
-/*start of the socials panel*/
-
-
-.socials {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.socials i {
-    color: darkslateblue;   
-    font-size: 1.5rem;
-    transition: 0.4s ease;
-    cursor: pointer;
-}   
-
-.socials i:hover {
-    transform: scale(120%); 
-    color: #2AFC98;
-}
-
 @media screen and (max-width: 767px) {
     
     .nav-items {
-        position: absolute;
         opacity: 0;
         pointer-events: none;
+        position: absolute;
         display: flex;
-        top: 100%;
+        top: 10%;
         right: auto;
         flex-direction: column;
         z-index: 1;
@@ -193,35 +120,65 @@
     .burger {
        opacity: 1;
        z-index: 2;
+        background-color: black;
     }
 }
 
-@media screen and (max-width: 859px) {
-    .main-page-img {
-        width: 17rem;
-        height: 17rem;
-    }
-
-    .main-page-header {
-        font-size: 1.7rem;
-    }
+.about-title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    z-index: 1;
 }
 
-@media screen and (min-width:819px) and (max-width: 1779px) {
-    .nav-items a {
-        font-size: 1.4rem;
-    }
-   
-    .main-page-img {
-        width: 25rem;
-        height: 25rem;
-    }
+.main-page-container {
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+}
 
-    .main-page-header {
-        font-size: 2.5rem;
-    }
+.box {
+    width: 50rem;
+    height: 25rem;
+    background-color: rgba(255, 255, 255, 0.856);
+    border-radius: 20px;
+    padding: 10px 30px;
+    box-shadow: 25px 25px 50px black, -10px -10px 30px black, 
+    inset  -5px -5px 15px black;
+}
 
-    .socials i {
-        font-size: 2.5rem;
-    }
+.left-img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px #912F40;
+    transition: box-shadow 0.3s, transform 0.3s;
+    animation: hover 3s infinite;
+    float: left;
+    shape-outside: circle(40%);
+    margin-right: 4rem;
+    margin-bottom: 5rem;
+}
+
+.left-img-header {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.left-img-text {
+    font-size: 1.5rem;
+    color: black;
+}
+
+@keyframes hover {
+    0% {box-shadow: 0 20px 20px #912F40;}
+
+    50% {box-shadow: 0 15px 35px #912F40;}
+
+    100% {box-shadow: 0 15px 20px #912F40;}
 }
