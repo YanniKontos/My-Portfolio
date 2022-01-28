@@ -8,40 +8,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!--start of page 1-->
     
+<div class='main-page-container' id='main-page-container'>   
 <nav class='navbar'>
         <h1 class='nav-title'>Yannis</h1>
         <button class="burger" id='burger' onclick='showNavItems()'>
             <div class="bar"></div>
         </button>
         <ul class='nav-items' id='nav-items'>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
+            <li><a href="#main-page-container">Home</a></li>
+            <li><a href="#page-2">About</a></li>
             <li><a href="">Expertise</a></li>
             <li><a href="">Contact Me</a></li>
         </ul>
 </nav>
 
-<section class='main-page-container'>
-    <div class="main-page">
+    <div class="main-page" id='main-page'>
         <img src="/imgs/pfp.jpg" class='main-page-img'>
         <h1 class='main-page-header'>Hi, I'm Yannis Kontos</h1>
-        
-
-            <div class="social-links">
-                <ul class='socials'>
-                    <li><a class="github" href="https://github.com/YanniKontos"><i class="fab fa-github"></i></a></li>
-                    <li><a class="twitter" href="https://twitter.com/Yanni_Kontos"><i class="fab fa-twitter"></i></a></li>
-                    <li><a class="instagram" href="https://www.instagram.com/ez_clap1/"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
+        <div class="social-links">
+            <ul class='socials'>
+                <li><a class="github" href="https://github.com/YanniKontos" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a class="twitter" href="https://twitter.com/Yanni_Kontos" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="linkedIn" href=""><i class="fab fa-linkedin" target="_blank"></i></a></li>
+            </ul>
+        </div>
     </div>
-        
-</section>
+</div>
+
+<!--end of page 1-->
     
-<footer>
-    
-</footer>
+<div class="page-2" id='page-2'>
+
+</div>
+
 
 <script src="app.js"></script>
 <script src="https://kit.fontawesome.com/a5c444f0a2.js" crossorigin="anonymous"></script>

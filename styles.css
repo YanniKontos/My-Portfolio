@@ -4,73 +4,82 @@
     box-sizing: border-box;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",
     Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    scroll-behavior: smooth;
     background: black;
     color: white;
+}
+
+.main-page-container {
+    width: 100%;
+    height: 100vh;
 }
 
 .navbar {
     position: fixed;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     min-height: 7vh;
     min-width: 100%;
     padding: 5px 10%;
     font-size: 1.2rem;
+    background-color: black;
 }
 
 /*positions and controlls the structure and layout of the navbar*/
-
-.avatar {
-    vertical-align: middle;
-    margin-right: .8%;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-/*avatar properties*/
 
 .nav-title {
     margin-right: auto;
     background: linear-gradient(5deg, #5c30b3, #c71585);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration: none;
     font-size: 2rem;
     cursor: pointer;
 }
 
-/*styling and position of the nav title*/
-
-.nav-items {
-    position: relative;
-    left: 3%;
+.nav-title::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #5c30b3;
 }
 
+.nav-title:hover::after {
+    width: 100%;
+    transition: width 0.5s;
+}
+
+/*styling and position of the nav title*/
+
 .nav-items li {
+    position: relative;
+    left: 20%;
     display: inline-block;
     text-decoration: none;
-    padding: 0px 20px;
 }
 
 .nav-items a {
     text-decoration: none;
     font-size: 1.1rem;
     transition: 0.4s;
+    margin-right: 50px;
 }
 
 .nav-items a:hover { 
-    color: #FA003F
+    color: #FA003F;
 }
 
 .burger {
     position: relative;
     display: block;
-    width: 30px;
     color: white;
     cursor: pointer;
     border: none;
+    pointer-events: none;
+    width: 30px;
     opacity: 0;
 }
 
@@ -88,28 +97,29 @@
 	transition: 0.4s;
 }
 
-.burger.is-active:before {
+.burger.active:before {
 	transform: rotate(-45deg) translate(-8px, 6px);
 }
 
-.burger.is-active:after {
+.burger.active:after {
 	transform: rotate(45deg) translate(-9px, -8px);
 }
 
-.burger.is-active .bar {
+.burger.active .bar {
 	opacity: 0;
 }
 
+/* the nav items for all compatibilities on devices */
+
 
 /*start of the main page content*/
+
 
 .main-page {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -70%);
-    z-index: -1;
-
 }
 
 .main-page-img {
@@ -143,7 +153,6 @@
 
 /*start of the socials panel*/
 
-
 .socials {
     display: flex;
     list-style: none;
@@ -152,7 +161,7 @@
 }
 
 .socials i {
-    color: darkslateblue;   
+    color: #483d8b;   
     font-size: 1.5rem;
     transition: 0.4s ease;
     cursor: pointer;
@@ -163,40 +172,53 @@
     color: #2AFC98;
 }
 
+/* mobile compatibility using the burger + nav links */
+
 @media screen and (max-width: 767px) {
-    
-    .nav-items {
-        position: absolute;
-        opacity: 0;
-        pointer-events: none;
-        display: flex;
-        top: 100%;
-        right: auto;
-        flex-direction: column;
+
+    .navbar {
         z-index: 1;
-        transition: 0.4s;
-        width: 97vw;
     }
 
-    .nav-items.is-active {
+    .nav-items {
+        position: absolute;
+        display: grid;
+        pointer-events: none;
+        opacity: 0;
+        top: 100%;
+        width: 100%;
+        transition: 0.4s;
+        right: auto;
+        flex-direction: column;
+    }
+
+    .nav-items li {
+        position: relative;
+        left: 0%;
+        width: 100vw;
+        height: 15vw;
+    }
+    
+    .nav-items.active {
         opacity: 1;
         pointer-events: all;
     }
-
+    
     .nav-items a {
-        display: block;
-        margin: 0 auto 16px;
+        display: grid;
+        margin: 10px auto 16px;
         text-align: center;
         padding: 12px 16px;
     }
 
     .burger {
-       opacity: 1;
-       z-index: 2;
+        pointer-events: visible;
+        opacity: 1;
     }
 }
 
-@media screen and (max-width: 859px) {
+@media screen and (max-width: 859px) and (max-width: 1779px){
+ 
     .main-page-img {
         width: 17rem;
         height: 17rem;
@@ -207,21 +229,11 @@
     }
 }
 
-@media screen and (min-width:819px) and (max-width: 1779px) {
-    .nav-items a {
-        font-size: 1.4rem;
-    }
-   
-    .main-page-img {
-        width: 25rem;
-        height: 25rem;
-    }
 
-    .main-page-header {
-        font-size: 2.5rem;
-    }
+/* start of page 2 */
 
-    .socials i {
-        font-size: 2.5rem;
-    }
+.page-2 {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
 }
