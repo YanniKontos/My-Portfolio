@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # My Personal Portfolio -
 Welcome to my portfolio repo, I've currently been doing web development for 3 months now, and have decided to finally make an actual portfolio and with it being hosted via GitHub pages. I really appreciate any tips and suggestions regarding this project on how to improve it, I do have an open mind to criticism.
 
