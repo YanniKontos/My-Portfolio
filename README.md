@@ -3,4 +3,3 @@ Welcome to my portfolio repo, I've currently been doing web development for 3 mo
 
 # Why Make A Portfolio ?
 I decided to make this repo as a means to prove evidence to myself and what I do to my future employers, and constantly maintaining + updating this as my technologies evolve and as I progress further into web development and software development
-=======
