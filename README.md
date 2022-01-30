@@ -4,4 +4,4 @@
 # Why Make A Portfolio ?
 **I decided to make this repo as a means to prove evidence to myself and what I do to my future employers, and constantly maintaining + updating this as my technologies evolve and as I progress further into web development and software development**
 
-# You Can Find The Project Link [Here] (https://pages.github.com/) Soon 
+# You Can Find The Project Link [Here](https://pages.github.com/) Soon 
