@@ -12,9 +12,13 @@
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: hidden;
+}
+
 .main-page-container {
     width: 100%;
-    height: 130vh;
+    height: 120vh;
 }
 
 .navbar {
@@ -53,7 +57,7 @@
 
 .nav-title:hover::after {
     width: 100%;
-    transition: width 0.5s;
+    transition: width 0.4s;
 }
 
 /*styling and position of the nav title*/
@@ -182,7 +186,7 @@
 
 /*responsive*/
 @media screen and (max-width: 767px) {
-
+   
     .nav-items {
         position: absolute;
         display: grid;
@@ -219,6 +223,8 @@
         pointer-events: visible;
         opacity: 1;
     }
+
+
 }
 
 /*responsive*/
@@ -253,12 +259,11 @@
 }
 
 .page-2-box {
-    position: relative;
-    background: #fff;
     text-align: center;
-    width: 1000px;
+    width: 90%;
     height: 500px;
     background: rgba( 0, 0, 0, 0.2 );
+    background: 1px solid black;
     box-shadow: 0px 0px 32px 5px #1f26875e;
     backdrop-filter: blur( 16px );
     -webkit-backdrop-filter: blur(16px);
@@ -276,6 +281,5 @@
 }
 
 .page-2-box h1 {
-    padding-top: 60px;
     color: white;
 }
