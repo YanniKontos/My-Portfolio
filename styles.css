@@ -233,7 +233,6 @@
 
     main .title-desc {
         padding: 0;
-        left: 2%;
         font-size: .9rem;
     }
 }
@@ -264,7 +263,7 @@
 
     main .title-desc {
         padding: 0;
-        left: 2%;
+        left: 3%;
         font-size: .9rem;
     }
 }
@@ -318,7 +317,7 @@
     border: 0;
     border-style: solid;
     border-bottom-width: 1px;
-    width: 100%;
+    width: 57.5%;
 }
 
 .footer-items {
@@ -340,6 +339,16 @@
 .function {
     margin-left: 1em;
     padding-right: 1em;
+}
+
+.p-break-border-2 {
+    position: relative;
+    opacity: 0.6;
+    border: 0;
+    border-style: solid;
+    border-bottom-width: 1px;
+    width: 57.5%;
+    margin-top: 2.5%;
 }
 
 
