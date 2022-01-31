@@ -235,6 +235,26 @@
         padding: 0;
         font-size: .9rem;
     }
+   
+    .p-break-border {
+        position: relative;
+        opacity: 0.6;
+        border: 0;
+        border-style: solid;
+        border-bottom-width: 1px;
+        width: 100%;
+        margin-top: 2.5%;
+    }
+
+    .p-break-border-2 {
+        position: relative;
+        opacity: 0.6;
+        border: 0;
+        border-style: solid;
+        border-bottom-width: 1px;
+        width: 100%;
+        margin-top: 2.5%;
+    }
 }
 
 /*responsive*/
