@@ -1,6 +1,7 @@
 :root {
     background: #121720;
     color: white;
+    overflow-x: hidden;
 }
 
 * {
@@ -244,7 +245,7 @@
         width: 100%;
         margin-top: 2.5%;
     }
-
+    
     .p-break-border-2 {
         position: relative;
         opacity: 0.6;
@@ -254,12 +255,26 @@
         width: 100%;
         margin-top: 2.5%;
     }
+
+    main .panel-wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        row-gap: 1em;
+        list-style: none;
+    }
+
+     .page-3-container {
+        width: 100%;
+        height: 250vh;
+    }
 }
 
 /*responsive*/
 
-@media screen and (max-width: 859px) and (max-width: 1779px){
- 
+@media only screen and (min-resolution: 132dpi) and (max-device-width: 1024px) and (orientation : portrait){
+   
     .main-page-img {
         width: 15rem;
         height: 15rem;
@@ -279,12 +294,21 @@
         place-items: center;
         font-size: 1rem;
     }
-
+   
     main .title-desc {
         padding: 0;
-        left: 3%;
         font-size: .9rem;
+        left: 1%;
     }
+
+    main .panel-wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+        list-style: none;
+    }
+
 }
 
 
@@ -296,7 +320,7 @@
 .page-2-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background: #121720;
     color: white;
 }
@@ -336,7 +360,7 @@
     border: 0;
     border-style: solid;
     border-bottom-width: 1px;
-    width: 57.5%;
+    width: 99%;
 }
 
 .footer-items {
@@ -366,7 +390,7 @@
     border: 0;
     border-style: solid;
     border-bottom-width: 1px;
-    width: 57.5%;
+    width: 99%;
     margin-top: 2.5%;
 }
 
@@ -374,19 +398,16 @@
 .page-3-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background: #121720;
     color: white;
 }
 
 .page-3-header {
-    position: absolute;
-    top: 1.4em;
-    left: 45%;
+    position: relative;
+    top: 5%;
     text-align: center;
-    border-bottom: 1px solid white;
     color: white;
-
 }
 
 .panel-wrapper {
@@ -402,7 +423,7 @@
 .github-panels {
     position: relative;
     background: none;
-    margin-top: 8em;
+    margin-top: 3.5em;
     height: 230px;
 }
 
@@ -414,6 +435,16 @@
     color: white;
     font-size: 150px;
     cursor: pointer;
+}
+
+.github-panels figcaption {
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;    
+    text-shadow: 0 0 1rem grey;
 }
 
 #hwvendor {
@@ -440,7 +471,7 @@
     display: grid;
     place-items: center;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background: #121720;
     color: white;
 }
