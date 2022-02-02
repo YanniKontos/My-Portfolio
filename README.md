@@ -4,4 +4,7 @@
 # Why Make A Portfolio ?
 **I decided to make this repo as a means to prove evidence about what work I do as information to my future employers, and constantly maintaining + updating this as my technologies evolve and as I progress further into web development and software development.**
 
+
+#Future Aims -
+**In the future I plan on uploading more JavaScript projects.**
 # You Can Find The Project Link [Here](#) Soon 
