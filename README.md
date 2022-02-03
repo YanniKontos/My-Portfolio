@@ -9,4 +9,4 @@
 **In the future I plan on uploading more JavaScript projects.**
 
 
-# You Can Find The Project Link [here](https://yannikontos.github.io/).
+# You Can Find The Project Link [Here](https://yannikontos.github.io/).
