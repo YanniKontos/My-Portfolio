@@ -1,7 +1,6 @@
 :root {
     background: #121720;
     color: white;
-    overflow-x: hidden;
 }
 
 * {
@@ -11,6 +10,10 @@
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",
     Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
 }
 
 .main-page-container {
@@ -182,6 +185,10 @@
 /*responsive*/
 @media screen and (max-width: 767px) {
     
+    body {
+        overflow: visible;
+    }
+  
     .nav-items {
         position: absolute;
         display: grid;
@@ -265,25 +272,24 @@
         list-style: none;
     }
 
-     .page-3-container {
+    div .page-3-container {
         width: 100%;
-        height: 250vh;
+        height: 335vh;
     }
 
-    .github-panels figcaption {
-        position: relative;
-        bottom: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;    
-        text-shadow: 0 0 1rem grey;
+    div .contact-wrapper {
+        width: 50%;
+        height: 50%;
     }
 }
 
 /*responsive*/
 
 @media only screen and (min-resolution: 132dpi) and (max-device-width: 1024px) and (orientation : portrait){
+   
+    body {
+        overflow: visible;
+    }
    
     .main-page-img {
         width: 15rem;
@@ -311,6 +317,15 @@
         left: 1%;
     }
 
+    div .page-3-container {
+        width: 100%;
+        height: 250vh;
+    }
+
+    .page-3-header {
+        margin-bottom: 25%;
+    }
+
     main .panel-wrapper {
         position: relative;
         display: grid;
@@ -318,7 +333,6 @@
         column-gap: 0px;
         list-style: none;
     }
-
 }
 
 
@@ -481,7 +495,75 @@
     display: grid;
     place-items: center;
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background: #121720;
     color: white;
+}
+
+.contact-wrapper {
+    position: relative;
+    margin-top: 10em;
+    width: 100%;
+    height: 100%;
+    background: #121720;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-wrapper h1 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.contact-form {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 1em;
+    outline: none;
+}
+
+.email-form {
+    width: 300px;
+    height: 50px;
+    font-size: 1rem;
+    padding-left: 1em;
+    border: none;
+    box-shadow: 0 0 1rem grey;
+}
+
+.message-form {
+    position: relative;
+    top: 60%;
+    width: 300px;
+    height: 80px;
+    font-size: 1rem;
+    padding: 15% 0;
+    padding-left: 1em;
+    border: none;
+    box-shadow: 0 0 1rem grey;
+}
+
+.contact-form input:focus {
+    outline: none;
+}
+
+.page-4-button {
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 40px;
+    border-radius: 980px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #0071e3;
+    color: white;
+    box-shadow: 0 0 .1rem black;
 }
