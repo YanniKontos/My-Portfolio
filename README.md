@@ -8,5 +8,4 @@
 #Future Aims -
 **In the future I plan on uploading more JavaScript projects.**
 
-
 # You Can Find The Project Link [Here](#) Soon 
