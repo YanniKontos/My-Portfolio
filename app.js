@@ -15,8 +15,7 @@ function submitForm() {
     }
 
     else {
-        alert
-        ('Thank You For Filling Out The Form, I Will Return To You In Due Time.');
+        alert('Thank You For Filling Out The Form, I Will Return To You In Due Time.');
     }
 
 }
